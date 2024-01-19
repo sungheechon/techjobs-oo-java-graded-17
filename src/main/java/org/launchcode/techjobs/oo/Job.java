@@ -83,6 +83,25 @@ public class Job {
     //  match.
 
     @Override
+    public String toString() {
+        String newline = System.lineSeparator();
+        String msgEmptyField = "Data not available";
+        String emptyField = "";
+        String emptyData = "OOPS! This job does not seem to exist.";
+
+        return  newline +
+
+                "ID: " + id + newline +
+                "Name: " + (name != emptyField ? name : msgEmptyField) + newline +
+                "Employer: " + (employer.getValue() != emptyField ? employer : msgEmptyField) + newline +
+                "Location: " + (location.getValue() != emptyField ? location : msgEmptyField) + newline +
+                "Position Type: " + (positionType.getValue() != emptyField ? positionType : msgEmptyField) + newline +
+                "Core Competency: " + (coreCompetency.getValue() != emptyField ? coreCompetency : msgEmptyField)
+
+                + newline;
+    }
+
+    @Override
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
