@@ -6,7 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="59ff47a6-ece6-4e2e-b777-6247aa1f282e" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/launchcode/techjobs/oo/Job.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/launchcode/techjobs/oo/Job.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/launchcode/techjobs/oo/JobTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/launchcode/techjobs/oo/JobTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,29 +50,39 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Gradle.TestTaskThree.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.TestTaskThree.testEqualsMethod.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.TestTaskTwo.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.TestTaskTwo.testCoreCompetencyHasIdGetter.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.TestTaskTwo.testCoreCompetencyHasValueAccessors.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.TestTaskTwo.testPositionTypeEqualsMethod.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.TestTaskTwo.testPositionTypeHashCodeMethod.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.TestTaskTwo.testPositionTypeToStringMethod.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.TestTaskTwo.testSecondLocationConstructorExists.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.TestTaskTwo.testSecondLocationConstructorInitializesId.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.TestTaskTwo.testSecondLocationConstructorInitializesValue.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.Tests in 'org.launchcode.techjobs.oo'.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Gradle.Build techjobs-oo-java-graded-17.executor": "Run",
+    "Gradle.JobTest.executor": "Run",
+    "Gradle.JobTest.testJobConstructorSetsAllFields.executor": "Run",
+    "Gradle.TestTaskFour.executor": "Run",
+    "Gradle.TestTaskFour.testTestJobConstructorSetsAllFieldsExists.executor": "Run",
+    "Gradle.TestTaskFour.testTestJobsForEqualityExists.executor": "Run",
+    "Gradle.TestTaskFour.testTestSettingJobIdExists.executor": "Run",
+    "Gradle.TestTaskThree.executor": "Run",
+    "Gradle.TestTaskThree.testEqualsMethod.executor": "Run",
+    "Gradle.TestTaskThree.testHashCodeMethod.executor": "Run",
+    "Gradle.TestTaskTwo.executor": "Run",
+    "Gradle.TestTaskTwo.testCoreCompetencyHasIdGetter.executor": "Run",
+    "Gradle.TestTaskTwo.testCoreCompetencyHasValueAccessors.executor": "Run",
+    "Gradle.TestTaskTwo.testPositionTypeEqualsMethod.executor": "Run",
+    "Gradle.TestTaskTwo.testPositionTypeHashCodeMethod.executor": "Run",
+    "Gradle.TestTaskTwo.testPositionTypeToStringMethod.executor": "Run",
+    "Gradle.TestTaskTwo.testSecondLocationConstructorExists.executor": "Run",
+    "Gradle.TestTaskTwo.testSecondLocationConstructorInitializesId.executor": "Run",
+    "Gradle.TestTaskTwo.testSecondLocationConstructorInitializesValue.executor": "Run",
+    "Gradle.Tests in 'org.launchcode.techjobs.oo'.executor": "Run",
+    "JUnit.JobTest.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   }
-}</component>
-  <component name="RunManager" selected="Gradle.TestTaskThree">
-    <configuration name="TestTaskThree" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+}]]></component>
+  <component name="RunManager" selected="Gradle.TestTaskFour">
+    <configuration name="JobTest.testJobConstructorSetsAllFields" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -85,7 +95,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;org.launchcode.techjobs.oo.TestTaskThree&quot;" />
+            <option value="&quot;org.launchcode.techjobs.oo.JobTest.testJobConstructorSetsAllFields&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -96,7 +106,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="TestTaskThree.testEqualsMethod" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="TestTaskFour" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -109,7 +119,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;org.launchcode.techjobs.oo.TestTaskThree.testEqualsMethod&quot;" />
+            <option value="&quot;org.launchcode.techjobs.oo.TestTaskFour&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -120,7 +130,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="TestTaskTwo" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="TestTaskFour.testTestJobConstructorSetsAllFieldsExists" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -133,7 +143,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;org.launchcode.techjobs.oo.TestTaskTwo&quot;" />
+            <option value="&quot;org.launchcode.techjobs.oo.TestTaskFour.testTestJobConstructorSetsAllFieldsExists&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -144,7 +154,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="TestTaskTwo.testPositionTypeEqualsMethod" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="TestTaskFour.testTestJobsForEqualityExists" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -157,7 +167,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;org.launchcode.techjobs.oo.TestTaskTwo.testPositionTypeEqualsMethod&quot;" />
+            <option value="&quot;org.launchcode.techjobs.oo.TestTaskFour.testTestJobsForEqualityExists&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -168,7 +178,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="TestTaskTwo.testPositionTypeHashCodeMethod" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="Tests in 'org.launchcode.techjobs.oo'" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -181,7 +191,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;org.launchcode.techjobs.oo.TestTaskTwo.testPositionTypeHashCodeMethod&quot;" />
+            <option value="&quot;org.launchcode.techjobs.oo.*&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -192,13 +202,33 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
+    <configuration name="JobTest" type="JUnit" factoryName="JUnit">
+      <module name="techjobs-oo-java17-graded.test" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="ALTERNATIVE_JRE_PATH" value="17" />
+      <option name="PACKAGE_NAME" value="org.launchcode.techjobs.oo" />
+      <option name="MAIN_CLASS_NAME" value="org.launchcode.techjobs.oo.JobTest" />
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Gradle.TestTaskFour" />
+      <item itemvalue="Gradle.Tests in 'org.launchcode.techjobs.oo'" />
+      <item itemvalue="Gradle.JobTest.testJobConstructorSetsAllFields" />
+      <item itemvalue="Gradle.TestTaskFour.testTestJobConstructorSetsAllFieldsExists" />
+      <item itemvalue="Gradle.TestTaskFour.testTestJobsForEqualityExists" />
+      <item itemvalue="JUnit.JobTest" />
+    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.TestTaskThree" />
-        <item itemvalue="Gradle.TestTaskThree.testEqualsMethod" />
-        <item itemvalue="Gradle.TestTaskTwo" />
-        <item itemvalue="Gradle.TestTaskTwo.testPositionTypeHashCodeMethod" />
-        <item itemvalue="Gradle.TestTaskTwo.testPositionTypeEqualsMethod" />
+        <item itemvalue="Gradle.TestTaskFour" />
+        <item itemvalue="Gradle.JobTest.testJobConstructorSetsAllFields" />
+        <item itemvalue="Gradle.Tests in 'org.launchcode.techjobs.oo'" />
+        <item itemvalue="Gradle.TestTaskFour.testTestJobsForEqualityExists" />
+        <item itemvalue="Gradle.TestTaskFour.testTestJobConstructorSetsAllFieldsExists" />
       </list>
     </recent_temporary>
   </component>
