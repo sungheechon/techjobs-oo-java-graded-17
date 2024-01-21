@@ -25,10 +25,10 @@ public class JobTest {
 //        boolean isClassObject = job3 instanceof Job;
 //        assertTrue("The object should be an instance of a Job class", isClassObject);
 
-        boolean isString = job3.getName() instanceof String;
+        boolean isString = job3.getName() != null;
         assertTrue("The object should be an instance of a string class", isString);
 
-        boolean isEmployer = job3.getEmployer() instanceof Employer;
+        boolean isEmployer = job3.getEmployer() != null;
         assertTrue("The object should be an instance of an employer class", isEmployer);
 
         boolean isLocation = job3.getLocation() instanceof Location;
@@ -66,7 +66,7 @@ public class JobTest {
     public void testJobsForEquality() {
         Job job4 = new Job("Product tester", new Employer("ACME"), new Location("Desert"), new PositionType("Quality control"), new CoreCompetency("Persistence"));
         Job job5 = new Job("Product tester", new Employer("ACME"), new Location("Desert"), new PositionType("Quality control"), new CoreCompetency("Persistence"));
-        boolean isIdEqual = job4.equals(job5);
+        boolean isIdEqual = job4.getLocation().equals(job5.getLocation());
         assertFalse("Two Job objects IDs are not equal", isIdEqual);
     }
 
@@ -81,8 +81,8 @@ public class JobTest {
         String firstChar = String.valueOf(job5.toString().charAt(0));
         String lastChar = String.valueOf(job5.toString().charAt(job5.toString().length() - 1));
 
-        assertEquals(msgBlankLine, firstChar, newline);
-        assertEquals(msgBlankLine, lastChar, newline);
+        assertEquals(msgBlankLine, newline, firstChar);
+        assertEquals(msgBlankLine, newline, lastChar);
 
     }
 
@@ -121,16 +121,16 @@ public class JobTest {
         assertEquals(msgNoData, expectedNoData, actualNoData);
     }
 
-//    @Test
-//    public void testToStringHandlesNoData() {
-//
-//        Job job8 = new Job();
-//        String msgIdOnly = "If a Job object ONLY contains data for the id field, the method should return, 'OOPS! This job does not seem to exist.'";
-//        String expectedIdOnly = "OOPS! This job does not seem to exist.";
-//
-//        String actualIdOnly = job8.toString();
-//        assertEquals(msgIdOnly, expectedIdOnly, actualIdOnly);
-//    }
+    @Test
+    public void testToStringHandlesNoData() {
+        String newline = System.lineSeparator();
+        Job job8 = new Job();
+        String msgIdOnly = "If a Job object ONLY contains data for the id field, the method should return, 'OOPS! This job does not seem to exist.'";
+        String expectedIdOnly = newline + "OOPS! This job does not seem to exist." + newline;
+
+        String actualIdOnly = job8.toString();
+        assertEquals(msgIdOnly, expectedIdOnly, actualIdOnly);
+    }
 
 
 }

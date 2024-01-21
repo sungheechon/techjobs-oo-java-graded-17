@@ -1,5 +1,6 @@
 package org.launchcode.techjobs.oo;
 
+import java.util.ArrayList;
 import java.util.Objects;
 
 public class Job {
@@ -13,13 +14,17 @@ public class Job {
     private PositionType positionType;
     private CoreCompetency coreCompetency;
 
+    private boolean isDefaultConstructor; // use it to check if an object only has ID and no other fields or not.
+
     // TODO: Add two constructors - one to initialize a unique ID and a second to initialize the
     //  other five fields. The second constructor should also call the first in order to initialize
     //  the 'id' field.
 
+
     public Job() {
         id = nextId;
         nextId++;
+        this.isDefaultConstructor = true;
     }
 
     public Job(String name, Employer employer, Location location, PositionType positionType, CoreCompetency coreCompetency) {
@@ -29,6 +34,7 @@ public class Job {
         this.location = location;
         this.positionType = positionType;
         this.coreCompetency = coreCompetency;
+        this.isDefaultConstructor = false;
     }
 
 
@@ -79,7 +85,15 @@ public class Job {
         this.coreCompetency = coreCompetency;
     }
 
-    // TODO: Add custom equals and hashCode methods. Consider two Job objects "equal" when their id fields
+    public boolean isDefaultConstructor() {
+        return isDefaultConstructor;
+    }
+
+    public void setDefaultConstructor(boolean defaultConstructor) {
+        isDefaultConstructor = defaultConstructor;
+    }
+
+// TODO: Add custom equals and hashCode methods. Consider two Job objects "equal" when their id fields
     //  match.
 
     @Override
@@ -87,19 +101,22 @@ public class Job {
         String newline = System.lineSeparator();
         String msgEmptyField = "Data not available";
         String emptyField = "";
-        String emptyData = "OOPS! This job does not seem to exist.";
+        String displayEmptyData = newline + "OOPS! This job does not seem to exist." + newline;
 
-        return  newline +
+        if (isDefaultConstructor) {
+            return displayEmptyData;
+        }
 
-                "ID: " + id + newline +
-                "Name: " + (name != emptyField ? name : msgEmptyField) + newline +
-                "Employer: " + (employer.getValue() != emptyField ? employer : msgEmptyField) + newline +
-                "Location: " + (location.getValue() != emptyField ? location : msgEmptyField) + newline +
-                "Position Type: " + (positionType.getValue() != emptyField ? positionType : msgEmptyField) + newline +
-                "Core Competency: " + (coreCompetency.getValue() != emptyField ? coreCompetency : msgEmptyField)
-
-                + newline;
+        String display = newline +
+                        "ID: " + id + newline +
+                        "Name: " + (name != emptyField ? name : msgEmptyField) + newline +
+                        "Employer: " + (!employer.getValue().equals(emptyField) ? employer : msgEmptyField) + newline +
+                        "Location: " + (!location.getValue().equals(emptyField) ? location : msgEmptyField) + newline +
+                        "Position Type: " + (!positionType.getValue().equals(emptyField) ? positionType : msgEmptyField) + newline +
+                        "Core Competency: " + (!coreCompetency.getValue().equals(emptyField) ? coreCompetency : msgEmptyField) + newline;
+        return display;
     }
+
 
     @Override
     public boolean equals(Object o) {
