@@ -103,18 +103,23 @@ public class Job {
         String emptyField = "";
         String displayEmptyData = newline + "OOPS! This job does not seem to exist." + newline;
 
-        if (isDefaultConstructor) {
+//        Check if fields (except ID) are null.
+//        if (isDefaultConstructor) {
+//            return displayEmptyData;
+//        }
+
+//        Check if fields (except ID) are null. Alternative way.
+        if (name == null && employer == null && location == null && positionType == null && coreCompetency == null) {
             return displayEmptyData;
         }
 
-        String display = newline +
+        return newline +
                         "ID: " + id + newline +
-                        "Name: " + (name != emptyField ? name : msgEmptyField) + newline +
+                        "Name: " + (!name.equals(emptyField) ? name : msgEmptyField) + newline +
                         "Employer: " + (!employer.getValue().equals(emptyField) ? employer : msgEmptyField) + newline +
                         "Location: " + (!location.getValue().equals(emptyField) ? location : msgEmptyField) + newline +
                         "Position Type: " + (!positionType.getValue().equals(emptyField) ? positionType : msgEmptyField) + newline +
                         "Core Competency: " + (!coreCompetency.getValue().equals(emptyField) ? coreCompetency : msgEmptyField) + newline;
-        return display;
     }
 
 
